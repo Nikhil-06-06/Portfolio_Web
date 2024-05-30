@@ -1,0 +1,73 @@
+@font-face {
+  font-family: monsterrat-thin;
+  src: url('../../../public/Fonts/Montserrat-Thin.ttf');
+}
+
+@font-face {
+  font-family: monsterrat-extralight;
+  src: url('../../../public/Fonts/Montserrat-ExtraLight.ttf');
+}
+
+@font-face {
+  font-family: monsterrat-light;
+  src: url('../../../public/Fonts/Montserrat-Light.ttf');
+}
+
+@font-face {
+  font-family: monsterrat-medium;
+  src: url('../../../public/Fonts/Montserrat-Medium.ttf');
+}
+
+@font-face {
+  font-family: monsterrat-semibold;
+  src: url('../../../public/Fonts/Montserrat-SemiBold.ttf');
+}
+
+@font-face {
+  font-family: monsterrat-bold;
+  src: url('../../../public/Fonts/Montserrat-Bold.ttf');
+}
+
+.m-t {
+  font-family: monsterrat-thin;
+}
+
+.m-el {
+  font-family: monsterrat-extralight;
+}
+
+.m-l {
+  font-family: monsterrat-light;
+}
+
+.m-m {
+  font-family: monsterrat-medium;
+}
+
+.m-sb {
+  font-family: monsterrat-semibold;
+}
+
+.m-b {
+  font-family: monsterrat-bold;
+}
+
+.app-container {
+  display: block;
+  height: 100vh;
+  width: 100vw;
+  font-size: 16px;
+  font-family: monsterrat-light;
+}
+
+header {
+  position: sticky;
+}
+
+.space-div {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: inherit;
+  color: inherit;
+}

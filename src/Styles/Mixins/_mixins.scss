@@ -1,0 +1,13 @@
+@mixin theme-styles-bg($bg-color) {
+  background-color: $bg-color;
+}
+
+@mixin theme-styles-text($text-color) {
+  color: $text-color;
+}
+
+@mixin flex-theme() {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

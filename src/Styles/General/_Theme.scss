@@ -1,0 +1,37 @@
+@import '../Mixins/mixins';
+@import '../../Constants/Colors';
+
+html[data-theme="light"] {
+  body {
+    @include theme-styles-bg($light-bg-color);
+    @include theme-styles-text($light-text-color)
+  }
+
+  .theme-switch-box {
+    @include theme-styles-bg($dark-bg-color);
+  }
+
+  .theme-switch {
+    @include theme-styles-bg($light-bg-color);
+  }
+}
+
+html[data-theme="dark"] {
+  body {
+    @include theme-styles-bg($dark-bg-color);
+    @include theme-styles-text($dark-text-color);
+    transition: all 0.3s ease-out;
+  }
+
+  .theme-switch-box {
+    @include theme-styles-bg($light-bg-color);
+  }
+
+  .theme-switch {
+    @include theme-styles-bg($dark-bg-color);
+  }
+}
+
+div {
+  @include flex-theme();
+}
