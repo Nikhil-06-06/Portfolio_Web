@@ -1,0 +1,27 @@
+@import '../../Constants/Colors';
+
+.home-container {
+  padding: 200px 120px 80px;
+
+  .cv-btn{
+    height: 50px;
+    width: 200px;
+    border-radius: 8px;
+    color: $dark-text-color;
+  }
+
+  .editor-block {
+    padding: 30px 35px;
+    border-radius: 10px;
+    box-shadow: rgba(0,0,0,0.05) 0px 5px 10px;
+  }
+
+  .interest-card {
+    height: 300px;
+    width: 250px;
+    border-radius: 8px;
+    box-shadow: rgba(0,0,0,0.05) 0px 5px 10px;
+    padding: 40px 30px;
+    text-align: center;
+  }
+}

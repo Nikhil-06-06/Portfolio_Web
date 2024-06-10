@@ -6,7 +6,7 @@ import { isDarkMode } from "../utils/utilities";
 function Navbar() {
   const theme = useTheme();
   const navItems = ["home", "about me", "projects"];
-  console.log(theme);
+
   const getThemeSwitch = () => {
     return (
       <div className="theme-switch-box">
@@ -23,7 +23,7 @@ function Navbar() {
   };
 
   return (
-    <div className="space-div navbar">
+    <div className="space-div navbar lighter-dark-bg">
       <div>MUI</div>
       <div>
         <div>

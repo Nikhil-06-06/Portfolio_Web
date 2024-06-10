@@ -14,6 +14,10 @@ html[data-theme="light"] {
   .theme-switch {
     @include theme-styles-bg($light-bg-color);
   }
+
+  .interest-card {
+    @include theme-styles-bg($light-bg-color);
+  }
 }
 
 html[data-theme="dark"] {
@@ -29,6 +33,14 @@ html[data-theme="dark"] {
 
   .theme-switch {
     @include theme-styles-bg($dark-bg-color);
+  }
+
+  .lighter-dark-bg {
+    @include theme-styles-bg($lighter-dark-bg);
+  }
+
+  .interest-card {
+    @include theme-styles-bg($lighter-dark-bg);
   }
 }
 
