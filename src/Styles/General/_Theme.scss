@@ -18,6 +18,10 @@ html[data-theme="light"] {
   .interest-card {
     @include theme-styles-bg($light-bg-color);
   }
+
+  .timeline {
+    @include theme-styles-bg($dark-bg-color);
+  }
 }
 
 html[data-theme="dark"] {
@@ -41,6 +45,10 @@ html[data-theme="dark"] {
 
   .interest-card {
     @include theme-styles-bg($lighter-dark-bg);
+  }
+
+  .timeline {
+    @include theme-styles-bg($light-bg-color);
   }
 }
 

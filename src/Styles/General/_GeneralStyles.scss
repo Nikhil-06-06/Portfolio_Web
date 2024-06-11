@@ -71,6 +71,11 @@
   justify-content: flex-start;
 }
 
+.fs-14 {
+  font-size: 14px;
+  line-height: 18px;
+}
+
 .fs-16 {
   font-size: 16px;
   line-height: 24px;
@@ -99,16 +104,30 @@
   margin-top: 30px;
 }
 
+.mt-8 {
+  margin-top: 8px;
+}
+
 .mg-8 {
   margin: 8px;
 }
 
-.mgb-200 {
-  margin-bottom: 200px;
+.mgb-150 {
+  margin-bottom: 150px;
+}
+
+.pd-app {
+  padding: 120px 120px 80px;
+}
+
+.pdl-25 {
+  padding-left: 25px;
 }
 
 section {
+  padding: 40px 0px 80px;
   margin-bottom: 24px;
+  min-width: 100%;
 }
 
 header {
@@ -124,6 +143,7 @@ header {
   height: 100vh;
   width: 100vw;
   font-size: 16px;
+  line-height: 24px;
   font-family: monsterrat-light;
 }
 
@@ -135,6 +155,6 @@ header {
   color: inherit;
 }
 
-.section-padding {
-  padding: 40px 120px 80px;
+.shadow-effect {
+  box-shadow: rgba(0,0,0,0.05) 0px 5px 10px;
 }

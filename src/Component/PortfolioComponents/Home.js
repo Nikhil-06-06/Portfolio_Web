@@ -25,15 +25,15 @@ function Home() {
 
   const getStaticEditor = () => {
     return (
-      <div className='editor-block column-flex align-start lighter-dark-bg'>
-        {EditorDetails.map((val) => <pre className='fs-18 m-m mg-8'>{val}</pre>)}
+      <div className='editor-block column-flex align-start lighter-dark-bg shadow-effect'>
+        {EditorDetails.map((val, index) => <pre className='fs-18 m-m mg-8' key={index}>{val}</pre>)}
       </div>
     )
   }
 
   const getIntroductionBlock = () => {
     return (
-      <div className='space-div w-100 mgb-200'>
+      <div className='space-div w-100 mgb-150'>
         <div className='column-flex align-start'>
           {getBasicInfoBlock()}
           {getCVandSocialHandles()}
@@ -47,7 +47,7 @@ function Home() {
 
   const getInterestCard = (data) => {
     return (
-      <div className='interest-card column-flex'>
+      <div className='interest-card column-flex shadow-effect'>
         <div>{data.header}</div>
         <div className='mt-30'>{data.content}</div>
       </div>
@@ -64,7 +64,7 @@ function Home() {
   }
 
   return (
-    <div className='home-container column-flex'>
+    <div className='column-flex'>
       {getIntroductionBlock()}
       {getInterestsBlock()}
     </div>

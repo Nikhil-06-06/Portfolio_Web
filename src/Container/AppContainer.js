@@ -9,7 +9,7 @@ function AppContainer() {
       <header>
         <Navbar />
       </header>
-      <main>
+      <main className="pd-app">
         <PortfolioContainer />
       </main>
       <footer>

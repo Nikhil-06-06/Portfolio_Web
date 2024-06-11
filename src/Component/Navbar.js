@@ -23,12 +23,12 @@ function Navbar() {
   };
 
   return (
-    <div className="space-div navbar lighter-dark-bg">
+    <div className="space-div navbar lighter-dark-bg shadow-effect">
       <div>MUI</div>
       <div>
         <div>
-          {navItems.map((item) => (
-            <div className="nav-item" key={item}>
+          {navItems.map((item, index) => (
+            <div className="nav-item" key={index}>
               {item}
             </div>
           ))}
