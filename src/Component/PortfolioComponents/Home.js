@@ -57,7 +57,7 @@ function Home() {
   const getInterestsBlock = () => {
     return(
       <div className='column-flex w-100'>
-        <div className='fs-32 m-sb'>Interests</div>
+        <div className='fs-32 m-b'>INTERESTS</div>
         <div className='mt-30 space-div w-100'> {Interests.map((data) => getInterestCard(data))} </div>
       </div>
     )

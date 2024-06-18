@@ -1,0 +1,23 @@
+.projects-box {
+  flex-wrap: wrap;
+  padding: 0px 50px;
+  justify-content: space-around;
+
+  .project-card {
+    display: block;
+    width: 33%;
+    margin: 20px 0px;
+    min-height: 500px;
+    padding: 32px 24px;
+    border-radius: 12px;
+
+    .project-image {
+      border-radius: 8px;
+      height: 200px;
+    }
+
+    .project-name {
+      margin: 18px 0px 8px;
+    }
+  }
+}

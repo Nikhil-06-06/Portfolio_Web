@@ -4,7 +4,7 @@ import { AboutMeContent } from "../../Constants/GeneralConstants";
 function AboutMe() {
   return (
     <div className="column-flex">
-      <div className="fs-32 m-sb">About Me</div>
+      <div className="fs-32 m-b">ABOUT ME</div>
       <div className="mt-40">
         <div className="img-container shadow-effect"></div>
         <div>{AboutMeContent}</div>

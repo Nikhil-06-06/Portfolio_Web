@@ -3,6 +3,8 @@ import Home from "../Component/PortfolioComponents/Home";
 import AboutMe from "../Component/PortfolioComponents/AboutMe";
 import Skillset from "../Component/PortfolioComponents/Skillset";
 import WorkExperience from "../Component/PortfolioComponents/WorkExperience";
+import Projects from "../Component/PortfolioComponents/Projects";
+import Education from "../Component/PortfolioComponents/Education";
 
 function PortfolioContainer() {
   return (
@@ -18,6 +20,12 @@ function PortfolioContainer() {
       </section>
       <section id="work-experience">
         <WorkExperience />
+      </section>
+      <section id="projects">
+        <Projects />
+      </section>
+      <section id="education">
+        <Education />
       </section>
     </div>
   );
