@@ -5,7 +5,7 @@ function Skillset() {
   return (
     <div className="column-flex">
       <div className="fs-32 m-b">MY SKILLSET</div>
-      <div className="mt-40 w-100 skill-box space-div">
+      <div className="mt-40 w-100 skill-box">
         {Skills.map((item, index) => <div className='skill-card' key={index}>{item}</div>)}
       </div>
     </div>

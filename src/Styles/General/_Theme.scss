@@ -4,7 +4,7 @@
 html[data-theme="light"] {
   body {
     @include theme-styles-bg($light-bg-color);
-    @include theme-styles-text($light-text-color)
+    @include theme-styles-text($light-text-color);
   }
 
   .theme-switch-box {
@@ -21,6 +21,10 @@ html[data-theme="light"] {
 
   .timeline {
     @include theme-styles-bg($dark-bg-color);
+  }
+
+  .home-icons {
+    @include theme-styles-text($light-text-color)
   }
 }
 
@@ -49,6 +53,10 @@ html[data-theme="dark"] {
 
   .timeline {
     @include theme-styles-bg($light-bg-color);
+  }
+
+  .home-icons {
+    @include theme-styles-text($dark-text-color)
   }
 }
 

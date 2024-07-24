@@ -1,4 +1,5 @@
-import React from 'react'
+import React from 'react';
+import '../../assests/byjus_logo.png'
 
 function Timeline({timelineData}) {
 
@@ -15,14 +16,14 @@ function Timeline({timelineData}) {
   const getTimelineCard = (data, index) => {
     return(
       <div className='timeline-card-container' key={index}>
-        <div className='logo'></div>
+        <img className='logo' src={data.logo} alt="img" />
         {getExperienceCard(data)}
       </div>
     )
   }
 
   return (
-    <div className='timeline mt-40'>
+    <div className='timeline'>
       {timelineData.map((item,index) => getTimelineCard(item, index))}
     </div>
   )

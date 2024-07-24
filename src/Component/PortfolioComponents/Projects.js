@@ -16,7 +16,7 @@ function Projects() {
   return (
     <div className="column-flex">
       <div className="fs-32 m-b">PROJECTS</div>
-      <div className="mt-40 w-100 projects-box">
+      <div className="mt-40 w-100 projects-box" style={{ alignItems: 'unset' }}>
         {ProjectsData.map((item, index) => projectCard(item, index))}
       </div>
     </div>

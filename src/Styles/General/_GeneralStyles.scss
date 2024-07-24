@@ -1,4 +1,5 @@
 @import '../../Constants/Colors';
+@import '../Mixins/mixins';
 
 @font-face {
   font-family: monsterrat-thin;
@@ -74,26 +75,56 @@
 .fs-14 {
   font-size: 14px;
   line-height: 18px;
+
+  @include respond(md) {
+    font-size: 12px;
+    line-height: 16px;
+  }
 }
 
 .fs-16 {
   font-size: 16px;
   line-height: 24px;
+
+  @include respond(md) {
+    font-size: 14px;
+    line-height: 20px;
+  }
 }
 
 .fs-18 {
   font-size: 18px;
   line-height: 24px;
+
+  @include respond(md) {
+    font-size: 16px;
+    line-height: 22px;
+  }
 }
 
 .fs-24 {
   font-size: 24px;
   line-height: 32px;
+
+
+  @include respond(md) {
+    font-size: 22px;
+    line-height: 28px;
+  }
 }
 
 .fs-32 {
   font-size: 32px;
   line-height: 40px;
+
+  @include respond(md) {
+    font-size: 28px;
+    line-height: 36px;
+  }
+}
+
+.ml-40 {
+  margin-left: 40px;
 }
 
 .mt-40 {
@@ -122,6 +153,14 @@
 
 .pd-app {
   padding: 120px 120px 80px;
+
+  @include respond(md) {
+    padding: 60px 60px 40px;
+  }
+
+  @include respond(sm) {
+    padding: 30px 30px 20px;
+  }
 }
 
 .pdl-25 {
@@ -153,6 +192,11 @@ header {
   font-size: 16px;
   line-height: 24px;
   font-family: monsterrat-light;
+
+  @include respond(md) {
+    font-size: 12px;
+    line-height: 18px;
+  }
 }
 
 .space-div {
@@ -161,6 +205,22 @@ header {
   justify-content: space-between;
   background-color: inherit;
   color: inherit;
+
+  @include respond(sm) {
+    flex-direction: column;
+  }
+}
+
+.space-around-div {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  background-color: inherit;
+  color: inherit;
+}
+
+.flex-wrap {
+  flex-wrap: wrap;
 }
 
 .shadow-effect {
