@@ -1,7 +1,7 @@
 import React from "react";
-import Navbar from "../Component/Navbar";
+import Navbar from "../Component/Generic_Components/Navbar";
 import PortfolioContainer from "./PortfolioContainer";
-import Footer from "../Component/Footer";
+import Footer from "../Component/Generic_Components/Footer";
 
 function AppContainer() {
   return (
