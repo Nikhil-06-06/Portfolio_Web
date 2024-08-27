@@ -1,5 +1,5 @@
 import React from 'react';
-import '../../assests/byjus_logo.png'
+import '../../assets/byjus_logo.png'
 
 function Timeline({timelineData}) {
 

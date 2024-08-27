@@ -1,7 +1,7 @@
 import React from "react";
-import { useTheme } from "../Context/context";
-import { themeValues } from "../Constants/GeneralConstants";
-import { isDarkMode } from "../utils/utilities";
+import { useTheme } from "../../Context/context";
+import { themeValues } from "../../Constants/GeneralConstants";
+import { isDarkMode } from "../../utils/utilities";
 
 function Navbar() {
   const theme = useTheme();
