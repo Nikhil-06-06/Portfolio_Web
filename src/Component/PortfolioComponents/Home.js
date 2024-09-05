@@ -4,7 +4,7 @@ import TypewriterComponent from 'typewriter-effect';
 import { Linkedin, Github } from 'lucide-react';
 
 function Home() {
-  const linkedIn = "LINKEDIN", github = "GITHUB"; 
+  const linkedIn = "LINKEDIN", github = "GITHUB", resume='RESUME'; 
   //Introduction-Block  
   const getBasicInfoBlock = () => {
     return (
@@ -26,17 +26,17 @@ function Home() {
     );
   }
 
-  const onIconClick = (key) => {
+  const onCTAClick = (key) => {
     window.open(IntroDetails[key], '_blank');
   }
 
   const getCVandSocialHandles = () => {
     return(
       <div className='column-flex align-start w-100'>
-        <div className='cv-btn gradient-block mt-40'>Download Resume</div>
+        <div className='cv-btn gradient-block mt-40 m-m border shadow-effect' onClick={() => onCTAClick(resume)}>Download Resume</div>
         <div className=' home-icons'>
-          <Linkedin className='icon-home' onClick={() => onIconClick(linkedIn)} />
-          <Github className='icon-home' onClick={() => onIconClick(github)} />
+          <Linkedin className='icon-home' onClick={() => onCTAClick(linkedIn)} />
+          <Github className='icon-home' onClick={() => onCTAClick(github)} />
         </div>
       </div>
     )
@@ -44,7 +44,7 @@ function Home() {
 
   const getStaticEditor = () => {
     return (
-      <div className='editor-block column-flex align-start lighter-dark-bg shadow-effect ml-40'>
+      <div className='editor-block column-flex align-start lighter-dark-bg shadow-effect ml-40 border'>
         {EditorDetails.map((val, index) => <pre className='fs-18 m-m mg-8' key={index}>{val}</pre>)}
       </div>
     )
@@ -66,8 +66,8 @@ function Home() {
 
   const getInterestCard = (data) => {
     return (
-      <div className='interest-card column-flex shadow-effect mt-40'>
-        <div>{data.header}</div>
+      <div className='interest-card column-flex shadow-effect mt-40 border'>
+        <div className='highlight m-m'>{data.header}</div>
         <div className='mt-30'>{data.content}</div>
       </div>
     )

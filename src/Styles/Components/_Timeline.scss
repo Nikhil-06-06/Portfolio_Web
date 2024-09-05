@@ -27,6 +27,7 @@
       width: 400px;
       display: block;
       padding: 18px 12px;
+      border-radius: 16px;
 
       @include respond(sm) {
         width: 250px;

@@ -7,7 +7,7 @@ function Router() {
     <BrowserRouter>
       <Routes>
         <Route
-          path="/portfolio"
+          path="/"
           element={
             <ThemeProvider>
               <AppContainer />

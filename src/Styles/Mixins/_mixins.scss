@@ -6,6 +6,10 @@
   color: $text-color;
 }
 
+@mixin theme-styles-bg-none() {
+  background-color: unset;
+}
+
 @mixin flex-theme() {
   display: flex;
   align-items: center;

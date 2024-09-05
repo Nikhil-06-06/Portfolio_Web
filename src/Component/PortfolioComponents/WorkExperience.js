@@ -6,7 +6,7 @@ function WorkExperience() {
 
   return (
     <div className="column-flex">
-      <div className="fs-32 m-b">WORK EXPERIENCE</div>
+      <div className="fs-32 m-b hl">WORK EXPERIENCE</div>
       <Timeline timelineData={Experience}/>
     </div>
   )

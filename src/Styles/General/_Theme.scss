@@ -23,8 +23,12 @@ html[data-theme="light"] {
     @include theme-styles-bg($dark-bg-color);
   }
 
-  .home-icons {
+  .home-icons{
     @include theme-styles-text($light-text-color)
+  }
+
+  .line, .nav-list {
+    @include theme-styles-bg($dark-bg-color);
   }
 }
 
@@ -57,6 +61,19 @@ html[data-theme="dark"] {
 
   .home-icons {
     @include theme-styles-text($dark-text-color)
+  }
+
+  .highlight {
+    @include theme-styles-bg-none();
+    @include theme-styles-text($light-bg-color2)
+  }
+
+  .hl {
+    @include theme-styles-text($light-bg-color2)
+  }
+
+  .line, .nav-list {
+    @include theme-styles-bg($light-bg-color);
   }
 }
 

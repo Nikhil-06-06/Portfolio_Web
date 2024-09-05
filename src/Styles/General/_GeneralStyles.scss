@@ -151,6 +151,24 @@
   margin-bottom: 150px;
 }
 
+html {
+  ::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+  ::-webkit-scrollbar-track {
+    background: $light-scrollbar-color;
+  }
+   
+  ::-webkit-scrollbar-thumb {
+    background: $dark-bg-color; 
+  }
+
+  ::-webkit-scrollbar-button {
+    display: none;
+  }
+}
+
 .pd-app {
   padding: 120px 120px 80px;
 
@@ -182,7 +200,7 @@ header {
 }
 
 .gradient-block {
-  background: linear-gradient(134deg, $light-shade-color 0%,$dark-shade-color 99%);
+  background-color: $light-bg-color2;
 }
 
 .app-container {
@@ -196,6 +214,16 @@ header {
   @include respond(md) {
     font-size: 12px;
     line-height: 18px;
+  }
+
+  ::-moz-selection {
+    background: $light-bg-color2;
+    color: $light-text-color;
+  }
+  
+  ::selection {
+    background: $light-bg-color2;
+    color: $light-text-color;
   }
 }
 
@@ -224,5 +252,14 @@ header {
 }
 
 .shadow-effect {
-  box-shadow: rgba(0,0,0,0.05) 0px 5px 10px;
+  box-shadow: $light-text-color 3px 3px;
+}
+
+.border {
+  border: 1px solid $light-text-color;
+}
+
+.highlight {
+  background-color: $light-bg-color2;
+  padding: 0px 5px;
 }

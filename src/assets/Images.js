@@ -1,0 +1,17 @@
+export const Images = {
+	byjus: require("./Images/byjus_logo.png"),
+	self: require("./Images/self.png"),
+	tiet: require("./Images/tiet.png"),
+	aws: require("./Images/aws.png"),
+	css: require("./Images/css-3.png"),
+	docker: require("./Images/docker.png"),
+	firebase: require("./Images/firebase.png"),
+	html: require("./Images/html-5.png"),
+	java: require("./Images/java.png"),
+	js: require("./Images/js.png"),
+	react: require("./Images/react.png"),
+	redux: require("./Images/redux.png"),
+	sass: require("./Images/sass.png"),
+	springBoot: require("./Images/spring-boot.png"),
+	ts: require("./Images/ts.png"),
+}

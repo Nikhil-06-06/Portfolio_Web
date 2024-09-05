@@ -5,7 +5,16 @@
   height: 50px;
   width: 200px;
   border-radius: 8px;
-  color: $dark-text-color;
+  color: $light-text-color;
+  box-shadow: $light-text-color 3px 3px;
+  outline: none;
+  cursor: pointer;
+
+  &:active {
+    transform: translate(2px,2px);
+    box-shadow: $light-text-color 1px 1px;
+    transition: all ease-in-out 0.1s;
+  }
 }
 
 .editor-block {
@@ -25,6 +34,7 @@
   padding: 40px 30px;
   text-align: center;
   cursor: default;
+  justify-content: flex-start;
 
   &:hover {
     transform: scale(1.1);

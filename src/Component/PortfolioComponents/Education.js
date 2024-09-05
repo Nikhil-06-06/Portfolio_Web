@@ -5,7 +5,7 @@ import Timeline from '../Generic_Components/Timeline';
 function Education() {
   return (
     <div className="column-flex">
-      <div className="fs-32 m-b">EDUCATION</div>
+      <div className="fs-32 m-b hl">EDUCATION</div>
       <Timeline timelineData={EducationData}/>
     </div>
   )

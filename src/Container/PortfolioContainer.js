@@ -12,13 +12,13 @@ function PortfolioContainer() {
       <section id="home">
         <Home />
       </section>
-      <section id="about-me">
+      <section id="about">
         <AboutMe />
       </section>
-      <section id="skill-set">
+      <section id="skills">
         <Skillset />
       </section>
-      <section id="work-experience">
+      <section id="work">
         <WorkExperience />
       </section>
       <section id="projects">

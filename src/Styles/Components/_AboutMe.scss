@@ -1,3 +1,8 @@
+@import '../../Constants/Colors';
+
 .img-container {
   border-radius: 50%;
+  height: 180px;
+  border: 1px solid $light-text-color;
+  margin-right: 12px;
 }
