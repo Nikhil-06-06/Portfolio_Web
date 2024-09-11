@@ -2,7 +2,6 @@
 
 .projects-box {
   flex-wrap: wrap;
-  padding: 0px 50px;
   justify-content: space-around;
 
   .project-card {
@@ -15,11 +14,21 @@
 
     .project-image {
       border-radius: 8px;
-      height: 200px;
+      width: 100%;
+      border: 1px solid black;
     }
 
     .project-name {
       margin: 18px 0px 8px;
+    }
+
+    .project-description {
+      display: block;
+    }
+
+    .inline {
+      display: inline;
+      cursor: pointer;
     }
   }
 }

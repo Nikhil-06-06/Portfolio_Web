@@ -66,12 +66,12 @@ function Navbar() {
   }
 
   return (
-    <div className="space-div navbar lighter-dark-bg shadow-effect">
+    <div className="navbar lighter-dark-bg">
       <div>MUI</div>
       <div>
         {getNavList()}
-        {getNavMenu()}
         {getThemeSwitch()}
+        {/* {getNavMenu()} */}
       </div>
     </div>
   );

@@ -1,6 +1,13 @@
 .navbar {
   padding: 10px 10%;
   min-height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  @include respond(sm) {
+    padding: 10px 2%;
+  }
 
   .nav-item {
     margin: 5px 20px;
@@ -62,7 +69,6 @@
   border-radius: 14px;
   font-size: 10px;
   justify-content: unset;
-  margin-left: 20px;
 
   .theme-switch {
     position: absolute;

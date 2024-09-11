@@ -169,6 +169,10 @@ html {
   }
 }
 
+body {
+  transition: all 0.3s ease-out;
+}
+
 .pd-app {
   padding: 120px 120px 80px;
 
@@ -197,6 +201,7 @@ section {
 
 header {
   position: sticky;
+  border-bottom: 3px solid $dark-bg-color;
 }
 
 .gradient-block {

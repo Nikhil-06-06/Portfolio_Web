@@ -2,78 +2,47 @@
 @import '../../Constants/Colors';
 
 html[data-theme="light"] {
-  body {
-    @include theme-styles-bg($light-bg-color);
-    @include theme-styles-text($light-text-color);
-  }
-
-  .theme-switch-box {
+  .theme-switch-box, .line, .nav-list, .timeline {
     @include theme-styles-bg($dark-bg-color);
   }
 
-  .theme-switch {
+  body, .theme-switch, .interest-card {
     @include theme-styles-bg($light-bg-color);
   }
 
-  .interest-card {
-    @include theme-styles-bg($light-bg-color);
+  .navbar {
+    @include theme-styles-bg($light-bg-color2);
   }
 
-  .timeline {
-    @include theme-styles-bg($dark-bg-color);
-  }
-
-  .home-icons{
+  body, .home-icons, .inline {
     @include theme-styles-text($light-text-color)
-  }
-
-  .line, .nav-list {
-    @include theme-styles-bg($dark-bg-color);
   }
 }
 
 html[data-theme="dark"] {
-  body {
-    @include theme-styles-bg($dark-bg-color);
-    @include theme-styles-text($dark-text-color);
-    transition: all 0.3s ease-out;
-  }
-
-  .theme-switch-box {
+  .theme-switch-box, .timeline, .line, .nav-list {
     @include theme-styles-bg($light-bg-color);
   }
 
-  .theme-switch {
+  body, .theme-switch {
     @include theme-styles-bg($dark-bg-color);
   }
 
-  .lighter-dark-bg {
+  .lighter-dark-bg, .interest-card {
     @include theme-styles-bg($lighter-dark-bg);
   }
 
-  .interest-card {
-    @include theme-styles-bg($lighter-dark-bg);
-  }
-
-  .timeline {
-    @include theme-styles-bg($light-bg-color);
-  }
-
-  .home-icons {
+  body, .home-icons {
     @include theme-styles-text($dark-text-color)
   }
 
-  .highlight {
+  .highlight, .inline {
     @include theme-styles-bg-none();
     @include theme-styles-text($light-bg-color2)
   }
 
   .hl {
     @include theme-styles-text($light-bg-color2)
-  }
-
-  .line, .nav-list {
-    @include theme-styles-bg($light-bg-color);
   }
 }
 

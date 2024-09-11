@@ -14,4 +14,8 @@ export const Images = {
 	sass: require("./Images/sass.png"),
 	springBoot: require("./Images/spring-boot.png"),
 	ts: require("./Images/ts.png"),
+	moviesFinder: require('./Images/movies-app.png'),
+	reelify: require('./Images/reelify.png'),
+	resumeBuilder: require('./Images/resume-builder.png'),
+	stickyNotes: require('./Images/sticky-notes.png')
 }

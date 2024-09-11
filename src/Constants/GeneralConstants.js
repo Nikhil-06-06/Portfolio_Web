@@ -63,33 +63,29 @@ export const Experience = [
 
 export const ProjectsData = [
   {
-    image: "img",
+    image: Images.reelify,
     name: "Reelify",
-    description: "Developed a highly interactive Instagram Reels Clone using React, Redux, and Firebase, complete with user authentication features such as sign-up, login, and logout. Enhanced user engagement by implementing functionalities for liking, commenting, and video uploads, with seamless auto-scrolling powered by the Intersection Observer API. The project currently handles around 1,000 daily video uploads and is in the process of integrating a robust Java back-end with Spring Security to fortify authentication and improve scalability.",
+    description: "Developed a highly interactive Instagram Reels Clone using React, Redux, and Firebase, complete with user authentication features such as sign-up, login, and logout. Enhanced user engagement by implementing functionalities for liking, commenting, and video uploads, with seamless auto-scrolling powered by the Intersection Observer API. The project currently handles video uploads and is in the process of integrating a robust Java back-end with Spring Security to fortify authentication and improve scalability.",
+    link: 'https://github.com/Nikhil-06-06/Insta-Reels'
   },
   {
-    image: "img",
+    image: Images.resumeBuilder,
     name: "Resume Builder",
     description: "Built an interactive Resume Builder web application leveraging React and the Context API, enabling users to effortlessly create professional resumes through a dynamic and intuitive form interface. Integrated advanced features such as real-time preview, customizable templates, and PDF export functionality to enhance user experience and usability. The application has been successfully utilized by over 50 individuals during college placement seasons, aiding in streamlined and effective presentation of qualifications and skills.",
+    link: 'https://github.com/Nikhil-06-06/Resume-Builer'
   },
   {
-    image: "img",
-    name: "Project 3",
-    description:
-      "Lorem Ipsum has been the industry's standard dummy text ever since the 1500s. ting and typesetting industry. Lorem Ipsum has been the industry's standard dummy.",
+    image: Images.moviesFinder,
+    name: 'Movie Finder',
+    description: 'Created an intuitive and user-friendly website for exploring trending movies using web APIs, offering a seamless browsing experience that allows users to easily navigate the latest and most popular films. The platform includes powerful filtering options based on genres like action, comedy, and drama, as well as sorting functionality by IMDb ratings and popularity, enabling users to find and prioritize movies that match their interests. With these features, the website provides a personalized and efficient way for movie enthusiasts to stay updated on current film trends and discover new favorites.',
+    link: 'https://github.com/Nikhil-06-06/Movies-App'
   },
   {
-    image: "img",
-    name: "Project 4",
-    description:
-      "Lorem Ipsum has been the industry's standard dummy text ever since the 1500s. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.",
-  },
-  {
-    image: "img",
-    name: "Project 5",
-    description:
-      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy.",
-  },
+    image: Images.stickyNotes,
+    name: 'Sticky Notes',
+    description: 'Developed a sticky notes app using React that allows users to create and manage notes for their daily tasks. Similar to physical sticky notes, the notes created will stay "stuck" to the dashboard until manually removed using a "Remove Note" button. The app also ensures that notes are saved persistently, so they remain available even after closing the site, allowing users to find their notes intact when they revisit the app.',
+    link: 'https://github.com/Nikhil-06-06/Sticky-Notes'
+  }
 ];
 
 export const EducationData = [
