@@ -1,14 +1,14 @@
-import React from 'react';
-import { EducationData } from '../../Constants/GeneralConstants';
-import Timeline from '../Generic_Components/Timeline';
+import React from "react";
+import { EducationData } from "../../Constants/GeneralConstants";
+import Timeline from "../Generic_Components/Timeline";
 
 function Education() {
   return (
     <div className="column-flex">
       <div className="fs-32 m-b hl">EDUCATION</div>
-      <Timeline timelineData={EducationData}/>
+      <Timeline timelineData={EducationData} />
     </div>
-  )
+  );
 }
 
-export default Education
+export default Education;

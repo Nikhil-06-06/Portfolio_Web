@@ -2,11 +2,17 @@
 @import '../../Constants/Colors';
 
 html[data-theme="light"] {
-  .theme-switch-box, .line, .nav-list, .timeline {
+
+  .theme-switch-box,
+  .line,
+  .nav-list,
+  .timeline {
     @include theme-styles-bg($dark-bg-color);
   }
 
-  body, .theme-switch, .interest-card {
+  body,
+  .theme-switch,
+  .interest-card {
     @include theme-styles-bg($light-bg-color);
   }
 
@@ -14,25 +20,34 @@ html[data-theme="light"] {
     @include theme-styles-bg($light-bg-color2);
   }
 
-  body, .home-icons, .inline {
+  body,
+  .home-icons,
+  .inline {
     @include theme-styles-text($light-text-color)
   }
 }
 
 html[data-theme="dark"] {
-  .theme-switch-box, .timeline, .line, .nav-list {
+
+  .theme-switch-box,
+  .timeline,
+  .line,
+  .nav-list {
     @include theme-styles-bg($light-bg-color);
   }
 
-  body, .theme-switch {
+  body,
+  .theme-switch {
     @include theme-styles-bg($dark-bg-color);
   }
 
-  .lighter-dark-bg, .interest-card {
+  .lighter-dark-bg,
+  .interest-card {
     @include theme-styles-bg($lighter-dark-bg);
   }
 
-  body, .home-icons {
+  body,
+  .home-icons {
     @include theme-styles-text($dark-text-color)
   }
 

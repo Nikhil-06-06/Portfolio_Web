@@ -13,7 +13,18 @@ function Projects() {
         <div className="project-name fs-24 m-sb">
           <span className="highlight">{data.name}</span>
         </div>
-        <div className="project-description">{data.description}<span className="inline"> <SquareArrowOutUpRight size={16} onClick={() => {window.open(data.link, '_blank')}} /> </span></div>
+        <div className="project-description">
+          {data.description}
+          <span className="inline">
+            {" "}
+            <SquareArrowOutUpRight
+              size={16}
+              onClick={() => {
+                window.open(data.link, "_blank");
+              }}
+            />{" "}
+          </span>
+        </div>
       </div>
     );
   };

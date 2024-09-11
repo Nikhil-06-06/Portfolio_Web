@@ -1,12 +1,12 @@
-import React, {useState} from "react";
+import React from "react";
 import { useTheme } from "../../Context/context";
 import { themeValues } from "../../Constants/GeneralConstants";
 import { isDarkMode } from "../../utils/utilities";
 import { navItems } from "../../Constants/GeneralConstants";
+import { Images } from "../../assets/Images";
 
 function Navbar() {
   const theme = useTheme();
-  const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   const getThemeSwitch = () => {
     return (
@@ -33,45 +33,14 @@ function Navbar() {
         ))}
       </div>
     );
-  }
-
-  const showDropdown = (e) => {
-    if(!isMenuOpen) {
-      document.addEventListener("click", hideDropdown);
-    }
-    setIsMenuOpen(!isMenuOpen);
-    e.stopPropagation();
   };
-
-  const hideDropdown = () => {
-    setIsMenuOpen(false);
-    document.removeEventListener("click", hideDropdown);
-  };
-
-  const getNavMenu = () => {
-    return (
-      <div className="nav-menu column-flex">
-        <div className="menu-container">
-          <div className="hamburger-icon" onClick={showDropdown}>{Array(3).fill(0).map(() => <div className="line border" />)}</div>
-          {isMenuOpen ? <div style={{ alignItems: 'flex-start' }} className="column-flex nav-list border shadow-effect">
-            {navItems.map((item, index) => (
-              <a className="nav-item" key={index} href={`#${item}`} onClick={hideDropdown}>
-                {item}
-              </a>
-            ))}
-          </div> : null}
-        </div>
-      </div>
-    )
-  }
 
   return (
     <div className="navbar lighter-dark-bg">
-      <div>MUI</div>
+      <img className="h-24" src={Images.portfolio} alt="portfolio" />
       <div>
         {getNavList()}
         {getThemeSwitch()}
-        {/* {getNavMenu()} */}
       </div>
     </div>
   );

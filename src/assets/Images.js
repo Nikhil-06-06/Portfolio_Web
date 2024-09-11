@@ -17,5 +17,6 @@ export const Images = {
 	moviesFinder: require('./Images/movies-app.png'),
 	reelify: require('./Images/reelify.png'),
 	resumeBuilder: require('./Images/resume-builder.png'),
-	stickyNotes: require('./Images/sticky-notes.png')
+	stickyNotes: require('./Images/sticky-notes.png'),
+	portfolio: require('./Images/portfolio.png')
 }

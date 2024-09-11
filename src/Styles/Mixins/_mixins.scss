@@ -17,11 +17,17 @@
 }
 
 @mixin respond($breakpoint) {
-  @if($breakpoint == md)  {
-    @media (max-width: 1000px) { @content }
-  };
+  @if($breakpoint ==md) {
+    @media (max-width: 1000px) {
+      @content
+    }
+  }
 
-  @if($breakpoint == sm)  {
-    @media (max-width: 750px) { @content }
+  ;
+
+  @if($breakpoint ==sm) {
+    @media (max-width: 750px) {
+      @content
+    }
   }
 }

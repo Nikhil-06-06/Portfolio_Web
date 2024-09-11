@@ -1,7 +1,7 @@
 @import '../../Constants/Colors';
 @import '../Mixins/mixins';
 
-.cv-btn{
+.cv-btn {
   height: 50px;
   width: 200px;
   border-radius: 8px;
@@ -11,7 +11,7 @@
   cursor: pointer;
 
   &:active {
-    transform: translate(2px,2px);
+    transform: translate(2px, 2px);
     box-shadow: $light-text-color 1px 1px;
     transition: all ease-in-out 0.1s;
   }
@@ -51,6 +51,7 @@
 .icon-home {
   margin: 18px 8px;
   cursor: pointer;
+
   &:hover {
     opacity: 60%;
   }

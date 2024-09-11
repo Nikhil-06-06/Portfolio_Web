@@ -38,7 +38,7 @@
         height: 30px;
         width: inherit;
         cursor: pointer;
-  
+
         .line {
           width: 30px;
           height: 4px;
@@ -46,7 +46,7 @@
           background-color: $light-bg-color2;
         }
       }
-  
+
       .nav-list {
         width: 120px;
         margin-top: 8px;
@@ -87,7 +87,8 @@
 
 .desktop-nav {
   display: block;
+
   @include respond(sm) {
     display: none;
-  } 
+  }
 }
